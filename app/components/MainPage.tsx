@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function MainPage() {
   return (
     <div className="flex h-fit flex-col items-center justify-center">
-      <div className="w-full flex flex-col gap-y-4 items-center justify-center bg-purple-600">
+      <div className="w-full flex flex-col gap-y-4 items-center justify-center bg-purple-600 py-4">
         <h1 className="text-4xl text-white font-semibold text-center container">
           Pilih Tes Yang Ingin Kamu Coba!
         </h1>
