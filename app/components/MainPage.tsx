@@ -2,20 +2,22 @@ import Image from "next/image";
 
 export default function MainPage() {
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-y-4 bg-purple-600">
-      <h1 className="text-4xl text-white font-semibold text-center container">
-        Pilih Tes Yang Ingin Kamu Coba!
-      </h1>
-      <Image
-        src="/gambar.png"
-        alt="Ilustrasi Tes Kepribadian"
-        width={300}
-        height={200}
-        className="rounded-lg"
-        priority
-      />
+    <div className="flex h-screen flex-col items-center justify-center ">
+      <div className="w-full flex flex-col gap-y-4 items-center justify-center bg-purple-600">
+        <h1 className="text-4xl text-white font-semibold text-center container">
+          Pilih Tes Yang Ingin Kamu Coba!
+        </h1>
+        <Image
+          src="/gambar.png"
+          alt="Ilustrasi Tes Kepribadian"
+          width={300}
+          height={200}
+          className="rounded-lg"
+          priority
+        />
+      </div>
 
-      <div className="flex flex-col gap-y-4 items-center justify-center bg-gray-100 w-full rounded-t-xl p-4">
+      <div className="flex flex-col gap-y-4 items-center justify-center bg-gray-100 w-full p-4">
         {[
           {
             href: "https://www.16personalities.com/id/tes-kepribadian",
@@ -24,6 +26,10 @@ export default function MainPage() {
           {
             href: "https://satupersen.net/quiz/tes-kepribadian-mbti/start",
             label: "Tes Tipe Kepribadian By Satu Persen",
+          },
+          {
+            href: "https://satupersen.net/psikotes-online-gratis/tes-love-language/start",
+            label: "Tes Love Language By Satu Persen",
           },
           {
             href: "https://tesgayabelajar-uptlbk.vercel.app/",
